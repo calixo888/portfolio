@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Calix Huang</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Sarpanch&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="title">
+      <div class="demo">
+        <div id="large-header" class="large-header">
+           <canvas id="demo-canvas"></canvas>
+           <div class="main-title">
+             <h1 class="main-title-header">Calix Huang</h1>
+             <p class="main-title-description">A self-taught computer programmer that still has no idea what he's doing.</p>
+           </div>
+        </div>
+     </div>
+    </header>
+    <section class="about-me panel" data-color="black">
+      <h1 class="about-me-header section-header">About Me</h1>
+      <p class="description">My name is Calix Huang and I'm 14 years old. I am an independent study student in a nationwide online school
+        called Connections Academy.<span id="dots"></span><span style="display: none;" id="more"> I am a completely self-taught
+        computer programmer, and I learned through online resources and classes. Programming is a big part of my life,
+        it's what provided me with the confidence to achieve things I could've never dreamed of.</span></p>
+
+      <button class="read-more-less" onclick="myFunction()" id="myBtn">Read more</button>
+      <div class="specialties">
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>Full Stack Web Development</h3>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Web Design</li>
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>HTML, CSS, JavaScript, Django, Flask, Node.js, and React.js experience</li>
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Freelance design for small companies</li>
+          </ul>
+        </div>
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="300">
+          <h3>Data Science</h3>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Data Analysis, Engineering, and Manipulation</li>
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Traditional Machine Learning methods</li>
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Natural Language Processing</li>
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Recommender Systems</li>
+          </ul>
+        </div>
+        <div class="specialty-card" data-aos="fade-up" data-aos-delay="500">
+          <h3>Leadership</h3>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Founder and President of HackSpace</li>
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Leadership member on Teen Leadership Council at Trivally CoderDojo</li>
+            <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Student leader in TeenTechSF</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="my-projects panel" data-color="white">
+      <h1 class="section-header">My Projects</h1>
+      <div class="projects">
+        <div class="project-container" data-aos="fade-left" data-aos-delay="100">
+          <div class="project-image-container">
+            <img src="img/computer-background.jpeg" alt="" class="project-image">
+            <h3 class="project-title">GameStrike</h3>
+          </div>
+          <div class="project-info">
+            <h3>GameStrike</h3>
+            <p>
+              A web-based embedded online game website for gamers to earn achievements, play games, and watch their
+              statistics grow. Used HTML, CSS, JavaScript, and Django.
+            </p>
+          </div>
+        </div>
+        <div class="project-container" data-aos="fade-left" data-aos-delay="200">
+          <div class="project-image-container">
+            <img src="img/computer-background.jpeg" alt="" class="project-image">
+            <h3 class="project-title">TriV Tracker</h3>
+          </div>
+          <div class="project-info">
+            <h3>TriV Tracker</h3>
+            <p>
+              A web-based achievement tracking system designed to track student progress throught their
+              programming journey, formatted to easily display to parents and mentors. Used HTML, CSS, JavaScript,
+              and Django
+            </p>
+          </div>
+        </div>
+        <div class="project-container" data-aos="fade-left" data-aos-delay="300">
+          <div class="project-image-container">
+            <img src="img/computer-background.jpeg" alt="" class="project-image">
+            <h3 class="project-title">Collaboratory</h3>
+          </div>
+          <div class="project-info">
+            <h3>Collaboratory</h3>
+            <p>
+              A web-based collaboration hub for students and colleagues alike. Using Django and Django Channels,
+              messages can be asynchronously broadcasted throughout the website in specific chat lobbies without
+              a single line of JavaScript. Used HTML, CSS, and Django.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-achievements panel" data-color="black">
+      <h1 class="my-achievements-header section-header">My Achievements</h1>
+      <div class="achievement-cards">
+        <div class="achievement-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="800">
+          <div class="card-side front">
+            <div class="achievement-image-container">
+              <img class="achievement-image" src="img/computer-background.jpeg" alt="">
+            </div>
+            <h3 class="achievement-title">California Cyber Innovation Challenge - 2nd place</h3>
+          </div>
+          <div class="card-side back">
+            <p>
+              Working with the Teen Leadership Council at Trivally CoderDojo, we placed second out of
+              thirty teams in this state-wide cybersecurity and forensics challenge. The trophy was almost
+              as tall as me!
+            </p>
+          </div>
+        </div>
+        <div class="achievement-card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="800">
+          <div class="card-side front">
+            <div class="achievement-image-container">
+              <img class="achievement-image" src="img/computer-background.jpeg" alt="">
+            </div>
+            <h3 class="achievement-title">TeenTechSF Civic Hackathon - 2nd place</h3>
+          </div>
+          <div class="card-side back">
+            <p>
+              TeenTechSF Civic Hackathon was put together by TeenTechSF, a global student leadership council, and
+              hosted at Make School, a computer science oriented private charter college. My partners and I placed
+              second in the entire hackathon, and ended up getting an augmented reality motion sensor as a prize.
+            </p>
+          </div>
+        </div>
+        <div class="achievement-card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
+          <div class="card-side front">
+            <div class="achievement-image-container">
+              <img class="achievement-image" src="img/computer-background.jpeg" alt="">
+            </div>
+            <h3 class="achievement-title">TriV Expo Hacks - Honorable Mention</h3>
+          </div>
+          <div class="card-side back">
+            <p>
+              This was my first ever hackathon, and I won an honorable mention for most creative project, which was
+              a facial recognition program powered with computer vision and deep learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="youtube-videos panel" data-color="white">
+      <h1 class="section-header">Popular YouTube Videos</h1>
+      <div class="videos">
+        <div class="video-container" data-aos="zoom-in" data-aos-delay="100">
+          <iframe class="video" src="https://www.youtube.com/embed/060FeXKZa0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Video Title</h3>
+          <div class="video-stats">
+            <span>Views</span><span>Date</span>
+          </div>
+        </div>
+        <div class="video-container" data-aos="zoom-in" data-aos-delay="200">
+          <iframe class="video" src="https://www.youtube.com/embed/060FeXKZa0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Video Title</h3>
+          <div class="video-stats">
+            <span>Views</span><span>Date</span>
+          </div>
+        </div>
+        <div class="video-container" data-aos="zoom-in" data-aos-delay="300">
+          <iframe class="video" src="https://www.youtube.com/embed/060FeXKZa0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Video Title</h3>
+          <div class="video-stats">
+            <span>Views</span><span>Date</span>
+          </div>
+        </div>
+        <div class="video-container" data-aos="zoom-in" data-aos-delay="400">
+          <iframe class="video" src="https://www.youtube.com/embed/060FeXKZa0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Video Title</h3>
+          <div class="video-stats">
+            <span>Views</span><span>Date</span>
+          </div>
+        </div>
+        <div class="video-container" data-aos="zoom-in" data-aos-delay="500">
+          <iframe class="video" src="https://www.youtube.com/embed/060FeXKZa0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Video Title</h3>
+          <div class="video-stats">
+            <span>Views</span><span>Date</span>
+          </div>
+        </div>
+        <div class="video-container" data-aos="zoom-in" data-aos-delay="600">
+          <iframe class="video" src="https://www.youtube.com/embed/060FeXKZa0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Video Title</h3>
+          <div class="video-stats">
+            <span>Views</span><span>Date</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="twitch-livestream panel" data-color="black">
+      <h1 class="twitch-header section-header">My Twitch Livestream</h1>
+      <div class="center-container livestream">
+        <iframe
+          class="livestream-stream"
+          height="450"
+          width="750"
+          src="https://player.twitch.tv/?channel=calix_huang"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen="yes">
+        </iframe>
+        <iframe
+           class="livestream-chat"
+           height="450"
+           width="350"
+           frameborder="0"
+           scrolling="no"
+           id="chat_embed"
+           src="http://twitch.tv/chat/embed?channel=calix_huang&amp;popout_chat=true">
+       </iframe>
+       <br>
+      </div>
+    </section>
+    <section class="contact-me panel" data-color="black" data-aos="flip-up" data-aos-delay="100">
+      <div class="float-container">
+        <h1 style="margin-bottom: 15px;" class="section-header">Contact Me</h1>
+        <form class="contact-me-form" action="https://formspree.io/calix.huang1@gmail.com" method="POST">
+          <input class="contact-input firstname" type="text" name="First Name" placeholder="First Name">
+          <input class="contact-input lastname" type="text" name="Last Name" placeholder="Last Name">
+          <input class="contact-input email" type="email" name="Email" placeholder="Email">
+          <textarea class="contact-input message" name="Message" placeholder="Message" cols="30" rows="10"></textarea>
+        </form>
+        <input class="contact-submit" type="submit" value="Contact Me">
+      </div>
+    </section>
+    <section class="future-concepts panel" data-color="white">
+      <h1 class="section-header">Future Concepts to Learn</h1>
+      <ul class="fa-ul">
+        <li data-aos="fade-left" data-aos-delay="100"><span class="fa-li"><i class="fas fa-angle-right"></i></span>Recommender Systems</li>
+        <li data-aos="fade-left" data-aos-delay="200"><span class="fa-li"><i class="fas fa-angle-right"></i></span>Time Series Analysis</li>
+        <li data-aos="fade-left" data-aos-delay="300"><span class="fa-li"><i class="fas fa-angle-right"></i></span>Big Data Technologies - Hadoop and Apache Spark</li>
+        <li data-aos="fade-left" data-aos-delay="400"><span class="fa-li"><i class="fas fa-angle-right"></i></span>Deep Learning</li>
+        <li data-aos="fade-left" data-aos-delay="500"><span class="fa-li"><i class="fas fa-angle-right"></i></span>Computer Vision</li>
+        <li data-aos="fade-left" data-aos-delay="600"><span class="fa-li"><i class="fas fa-angle-right"></i></span>AWS Services - SageMaker and RoboMaker</li>
+      </ul>
+    </section>
+    <section class="footer panel" data-color="black">
+      <h1 style="color: white;">Follow me on social media!</h1>
+      <div class="social-media-icons">
+        <a href="https://www.youtube.com/channel/UClBbJJd0MuQ1RsuPCShIaGQ"><img  data-aos="zoom-in" data-aos-delay="100" class="social-media-icon" src="img/youtube.png" alt="Youtube Icon"></a>
+        <a href="https://www.facebook.com/calix.huang.904"><img  data-aos="zoom-in" data-aos-delay="150" class="social-media-icon" src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/calixhuang1"><img  data-aos="zoom-in" data-aos-delay="200" class="social-media-icon" src="img/twitter.png" alt="Twitter"></a>
+        <a href="https://www.twitch.tv/calix_huang"><img  data-aos="zoom-in" data-aos-delay="250" class="social-media-icon" src="img/twitch.png" alt="Twitch"></a>
+        <a href="https://github.com/calixo888"><img  data-aos="zoom-in" data-aos-delay="300" class="social-media-icon" src="img/github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/calix-huang-ab5444175/"><img  data-aos="zoom-in" data-aos-delay="350" class="social-media-icon" src="img/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://discord.gg/Ee73AD"><img  data-aos="zoom-in" data-aos-delay="400" class="social-media-icon" src="img/discord.png" alt="Discord"></a>
+        <a href="https://medium.com/@calix.huang1"><img  data-aos="zoom-in" data-aos-delay="450" class="social-media-icon medium" src="img/medium.png" alt="Medium"></a>
+        <a href="mailto:calix.huang1@gmail.com"><img  data-aos="zoom-in" data-aos-delay="500" class="social-media-icon" src="img/email.png" alt="Email"></a>
+      </div>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js" charset="utf-8"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js" charset="utf-8"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
