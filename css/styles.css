@@ -146,6 +146,31 @@ h1:not(:first-child) {
   align-self: center;
 }
 
+/* OPEN SOURCE CONTRIBUTIONS */
+
+.open-source-contributions {
+  
+}
+
+.contributions {
+  text-align: center;
+}
+
+table {
+  margin: 50px 100px;
+  overflow: scroll;
+}
+
+table, th, td {
+  border-top: 1px solid #ccc;
+  padding: 15px 30px;
+  text-align: left;
+}
+
+th {
+  border-bottom: 2px solid #ccc;
+}
+
 /* MY ACHIEVEMENTS */
 
 .my-achievements-header {
@@ -325,7 +350,11 @@ h1:not(:first-child) {
 }
 
 .medium {
-  transform: scale(0.89);
+  transform: scale(0.89) !important;
+}
+
+.twitch {
+  transform: scale(0.89) !important;
 }
 
 .color-white {
